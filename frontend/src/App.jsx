@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     console.log('App mounted');
 
-    socketRef.current = io('http://localhost:3000', {
+    socketRef.current = io('http://192.168.2.202:3000', {
       transports: ['polling']
     });
 
